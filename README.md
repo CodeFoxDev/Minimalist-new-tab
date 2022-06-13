@@ -13,5 +13,7 @@ A minimalist new tab extenstion for Chrome and Firefox.
 # Customization guide
 Currently the only thing you can customize is the default google user for the apps.
 To change it:
-1. Open the inspector (ctrl+shift+i / ctrl+shift+c) console and enter the following ```js setDefaultUser(user)```, and user being the number of the preffered account (0, 1, 2, etc.).
+1. Open the inspector (ctrl+shift+i / ctrl+shift+c) console and enter the following ``` setDefaultUser(user)```, and user being the number of the preffered account (0, 1, 2, etc.).
 2. And press enter, the page will now refresh and all links should have changed to match your preference.
+
+More customization options will come in the future, and if you have improvements or feedback, please let me know!
