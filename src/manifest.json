@@ -11,23 +11,6 @@
     "storage",
     "tabs"
   ],
-  "content_scripts": [
-    {
-      "matches": [
-        "http://*/*"
-      ],
-      "css": [
-        "css/fontawesome.min.css",
-        "css/regular.min.css"
-      ]
-    }
-  ],
-  "web_accessible_resources": [
-    {
-      "resources": ["css/fontawesome.min.css", "css/regular.min.css", "webfonts/fa-regular-400.woff2"],
-      "matches": ["http://*/*"]
-    }
-  ],
   "icons": {
     "128": "./assets/icon_trans.png"
   }
