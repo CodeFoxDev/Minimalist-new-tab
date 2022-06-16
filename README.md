@@ -1,5 +1,7 @@
 # Minimalist new tab
 A minimalist new tab extenstion for Chrome
+- [Install Guide](https://github.com/CodeFoxDev/Minimalist-new-tab/blob/main/README.md#install-guide)
+- [Custimization Guide](https://github.com/CodeFoxDev/Minimalist-new-tab/blob/main/README.md#customization-guide)
 
 # Release notes
 
