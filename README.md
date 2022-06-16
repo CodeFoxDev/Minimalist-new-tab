@@ -3,8 +3,10 @@ A minimalist new tab extenstion for Chrome
 - [Install Guide](https://github.com/CodeFoxDev/Minimalist-new-tab/blob/main/README.md#install-guide)
 - [Custimization Guide](https://github.com/CodeFoxDev/Minimalist-new-tab/blob/main/README.md#customization-guide)
 
-# Release notes
-
+# Features
+- Clock (hh:mm:ss) with realtime update (animated)
+- Google search bar with fitler for Images, News & Maps
+- Different google apps in a filtered grid, with changing default google user.
 # Install guide
 1. Go into the src folder, and download the files as a zip folder.
 2. Unzip it to a directory of your choosing, but remember that if you delete the directory that the extension will stop working!
@@ -15,9 +17,6 @@ A minimalist new tab extenstion for Chrome
 7. Once you open a new tab, there will be a pop-up asking if you want to keep this extension as your new tab, and click on confirm (or something else).
 8. Now the extension is installed, enjoy your minimalist new tab!
 # Customization guide
-Currently the only thing you can customize is the default google user for the apps.
-To change it:
-1. Open the inspector (ctrl+shift+i / ctrl+shift+c) console and enter the following ``` setDefaultUser(user)```, and user being the number of the preffered account (0, 1, 2, etc.).
-2. And press enter, the page will now refresh and all links should have changed to match your preference.
+Most off the custimizations are available in the settings menu. Click the gear icon in the bottom-right corner to open the menu.
 
 More customization options will come in the future, and if you have improvements or feedback, please let me know!
