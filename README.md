@@ -1,6 +1,8 @@
 # Minimalist new tab
-A minimalist new tab extenstion for Chrome and Firefox.
-- Firefox version: (Coming soon)
+A minimalist new tab extenstion for Chrome
+
+# Release notes
+
 # Install guide
 1. Go into the src folder, and download the files as a zip folder.
 2. Unzip it to a directory of your choosing, but remember that if you delete the directory that the extension will stop working!
