@@ -1,15 +1,32 @@
 {
   "manifest_version": 3,
   "name": "Minimalist new tab",
-  "version": "1.0.0",
+  "version": "1.0",
   "description": "Just a minimalist new tab extension, with a clock and search bar",
   "author": "Codefoxdev",
-  "chrome_url_overrides" : {
+  "chrome_url_overrides": {
     "newtab": "index.html"
   },
   "permissions": [
     "storage",
     "tabs"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*"
+      ],
+      "css": [
+        "css/fontawesome.min.css",
+        "css/regular.min.css"
+      ]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["css/fontawesome.min.css", "css/regular.min.css", "webfonts/fa-regular-400.woff2"],
+      "matches": ["http://*/*"]
+    }
   ],
   "icons": {
     "128": "./assets/icon_trans.png"
