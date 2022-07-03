@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/newtab.css">
+    <script src="/js/fa-kit.js"></script>
+    <script src="/js/newtab.js"></script>
+    <style>
+        body {
+            width: 500px;
+            height: 250px;
+            font-size: 1rem;
+        }
+
+        nav {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: var(--gray5);
+            height: var(--nav-height);
+        }
+
+        nav .nav-logo {
+            width: min-content;
+            float: left;
+            margin-right: auto;
+        }
+
+        .logo img,
+        .logo svg {
+            width: 2em;
+            height: 2em;
+        }
+
+        nav .nav-links {
+            width: auto;
+            float: right;
+            margin-left: auto;
+        }
+
+        a.item,
+        div.item {
+            color: var(--text-color);
+        }
+
+        i.icon {
+            font-style: normal;
+        }
+
+        .item {
+            position: relative;
+            height: var(--nav-height);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            margin: 0 1em;
+        }
+
+        .item-icon {
+            margin: 0 !important;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="flex-center">
+        <div class="nav-logo flex-center">
+            <a href="/html/popup.html" class="item logo">
+                <img src="/assets/icon_trans.png" alt="Codefoxdev logo">
+            </a>
+        </div>
+        <div class="nav-links flex-center">
+            <a href="/html/settings.html" class="item item-icon">
+                <span class="item">
+                    <i class="fa-solid fa-gear icon"></i>
+                </span>
+            </a>
+            <a href="/html/account.html" class="item item-icon">
+                <span class="item">
+                    <i class="fa-solid fa-user icon"></i>
+                </span>
+            </a>
+        </div>
+    </nav>
+    <main>
+        <div class="flex-center-column" style="height: 120px;">
+            <h1 class="border-bottom" style="font-size: 3rem; margin-bottom: .25rem;">Minimalist new tab</h1>
+            <p style="margin-top: .25rem;">Just a minimalist new tab extension, with a clock and search bar</p>
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/newtab.css">
+    <script src="/js/fa-kit.js"></script>
+    <script src="/js/popup.js"></script>
+    <style>
+        body {
+            width: 500px;
+            height: 500px;
+            font-size: 1rem;
+        }
+
+        nav {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: var(--gray5);
+            height: var(--nav-height);
+        }
+
+        nav .nav-logo {
+            width: min-content;
+            float: left;
+            margin-right: auto;
+        }
+
+        .logo img,
+        .logo svg {
+            width: 2em;
+            height: 2em;
+        }
+
+        nav .nav-links {
+            width: auto;
+            float: right;
+            margin-left: auto;
+        }
+
+        a.item,
+        div.item {
+            color: var(--text-color);
+        }
+
+        i.icon {
+            font-style: normal;
+        }
+
+        .item {
+            position: relative;
+            height: var(--nav-height);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            margin: 0 1em;
+        }
+
+        .item-icon {
+            margin: 0 !important;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="flex-center">
+        <div class="nav-logo flex-center">
+            <a href="/html/popup.html" class="item logo">
+                <img src="/assets/icon_trans.png" alt="Codefoxdev logo">
+            </a>
+        </div>
+        <div class="nav-links flex-center">
+            <a href="/html/settings.html" class="item item-icon">
+                <span class="item">
+                    <i class="fa-solid fa-gear icon"></i>
+                </span>
+            </a>
+            <a href="/html/account.html" class="item item-icon">
+                <span class="item">
+                    <i class="fa-solid fa-user icon"></i>
+                </span>
+            </a>
+        </div>
+    </nav>
+    <main>
+        <div class="options-parent" style="top: 4.25rem; left: 1rem;">
+            <div class="options-holder">
+                <h1>Options menu</h1>
+            </div>
+            <hr>
+            <div class="properties-holder">
+                <h2>General</h2>
+                <ul>
+                    <li>
+                        <div class="align-center-y opt-holder">
+                            <label for="defaultUser">Default User for Google</label>
+                            <input type="number" name="defaultUser" id="defaultUser">
+                        </div>
+                    </li>
+                </ul>
+                <h2>Clock</h2>
+                <ul>
+                    <li>
+                        <div class="align-center-y opt-holder">
+                            <label for="clockStyle">Clock style</label>
+                            <select name="clockStyle" id="clockStyle">
+                                <option value="24">24 Hour</option>
+                                <option value="12">12 Hour</option>
+                            </select>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="align-center-y opt-holder">
+                            <label for="clockStyle">Clock precision</label>
+                            <select name="clockStyle" id="clockPrecision">
+                                <option value="HH:MM:SS">HH:MM:SS</option>
+                                <option value="HH:MM">HH:MM</option>
+                                <option value="HH">HH</option>
+                            </select>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="align-center-y opt-holder">
+                            <label>Clock flickering</label>
+                            <label class="switch align-right">
+                                <input type="checkbox" id="clockFlicker">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
