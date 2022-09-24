@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New tab</title>
+  <script src="/js/fa-kit.js"></script>
+  <script src="/js/newtab.js"></script>
+  <link rel="stylesheet" href="/css/newtab.css">
+</head>
+
+<body>
+  <input type="checkbox" name="options-switch" id="options-switch">
+  <label class="label-switch" for="options-switch">
+    <i class="fa-solid fa-gear"></i>
+  </label>
+  <div class="main">
+    <div class="time-holder">
+      <h1 class="main-title time-display">
+        <span id="hour1">0</span><span id="hour2">0</span><span id="point1">:</span><span id="min1">0</span><span id="min2">0</span><span id="point2">:</span><span id="sec1">0</span><span id="sec2">0</span>
+      </h1>
+      <span style="font-size: 2rem; margin-top: 0;" id="time-style"></span>
+    </div>
+    <form class="search-form">
+      <input type="search" value="" placeholder="Search" class="search-input" autofocus>
+      <button type="submit" class="search-button">
+        <svg class="submit-button">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#search"></use>
+        </svg>
+      </button>
+      <div class="search-option">
+        <div>
+          <input name="type" type="radio" value="type-images" id="type-images">
+          <label for="type-images">
+            <svg class="edit-pen-title">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#images"></use>
+            </svg>
+            <span>Images</span>
+          </label>
+        </div>
+
+        <div>
+          <input name="type" type="radio" value="type-posts" id="type-posts">
+          <label for="type-posts">
+            <svg class="edit-pen-title">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#post"></use>
+            </svg>
+            <span>Posts</span>
+          </label>
+        </div>
+        <div>
+          <input name="type" type="radio" value="type-special" id="type-maps" checked="">
+          <label for="type-maps">
+            <svg class="edit-pen-title">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#maps"></use>
+            </svg>
+            <span>Maps</span>
+          </label>
+        </div>
+      </div>
+    </form>
+    <div class="apps-holder">
+      <a href="https://drive.google.com/drive/u/" class="link-authuser drive">
+        <div class="apps-item flex-center-column">
+          <i class="fa-brands fa-google-drive"></i>
+          <p>Google drive</p>
+        </div>
+      </a>
+      <a href="https://mail.google.com/mail/u/" class="link-authuser gmail">
+        <div class="apps-item flex-center-column">
+          <i class="fa-solid fa-envelope"></i>
+          <p>Gmail</p>
+        </div>
+      </a>
+      <a href="https://classroom.google.com/u/" class="link-authuser classroom">
+        <div class="apps-item flex-center-column">
+          <svg aria-hidden="true" data-prefix="far" data-icon="users-class" role="img"
+            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"
+            class="svg-inline--fa fa-users-class fa-w-20 fa-7x">
+            <path fill="currentColor"
+              d="M80 48h480v133.62c17.64 2.56 34.01 8.91 48 18.71V49.59C608 22.25 586.47 0 560 0H80C53.53 0 32 22.25 32 49.59v150.73c13.99-9.8 30.36-16.15 48-18.71V48zm28 356H84c-46.31 0-84 37.69-84 84 0 13.25 10.75 24 24 24s24-10.75 24-24c0-19.84 16.16-36 36-36h24c19.84 0 36 16.16 36 36 0 13.25 10.75 24 24 24s24-10.75 24-24c0-46.31-37.69-84-84-84zm436-192c-44.18 0-80 35.82-80 80s35.82 80 80 80 80-35.82 80-80-35.82-80-80-80zm0 112c-17.64 0-32-14.36-32-32s14.36-32 32-32 32 14.36 32 32-14.36 32-32 32zm12 80h-24c-46.31 0-84 37.69-84 84 0 13.25 10.75 24 24 24s24-10.75 24-24c0-19.84 16.16-36 36-36h24c19.84 0 36 16.16 36 36 0 13.25 10.75 24 24 24s24-10.75 24-24c0-46.31-37.69-84-84-84zM96 372c44.18 0 80-35.82 80-80s-35.82-80-80-80-80 35.82-80 80 35.82 80 80 80zm0-112c17.64 0 32 14.36 32 32s-14.36 32-32 32-32-14.36-32-32 14.36-32 32-32zm144 32c0 44.18 35.82 80 80 80s80-35.82 80-80-35.82-80-80-80-80 35.82-80 80zm112 0c0 17.64-14.36 32-32 32s-32-14.36-32-32 14.36-32 32-32 32 14.36 32 32zm-20 112h-24c-46.31 0-84 37.69-84 84 0 13.25 10.75 24 24 24s24-10.75 24-24c0-19.84 16.16-36 36-36h24c19.84 0 36 16.16 36 36 0 13.25 10.75 24 24 24s24-10.75 24-24c0-46.31-37.69-84-84-84z"
+              class=""></path>
+          </svg>
+          <p>Classroom</p>
+        </div>
+      </a>
+      <a href="https://calendar.google.com/calendar/u/" class="link-authuser calendar">
+        <div class="apps-item flex-center-column">
+          <i class="fa-solid fa-calendar"></i>
+          <p>Calender</p>
+        </div>
+      </a>
+      <a href="https://translate.google.nl/" class="link-authuser translate">
+        <div class="apps-item flex-center-column">
+          <i class="fa-solid fa-language"></i>
+          <p>Translate</p>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="options-menu"></div>
+  
+  <div class="options-parent closed">
+    <div class="options-holder">
+      <h1>Options menu</h1>
+    </div>
+    <hr>
+    <div class="properties-holder">
+      <h2>General</h2>
+      <ul>
+        <li>
+          <div class="align-center-y opt-holder">
+            <label for="defaultUser">Default User for Google</label>
+            <input type="number" name="defaultUser" id="defaultUser">
+          </div>
+        </li>
+      </ul>
+      <h2>Clock</h2>
+      <ul>
+        <li>
+          <div class="align-center-y opt-holder">
+            <label for="clockStyle">Clock style</label>
+            <select name="clockStyle" id="clockStyle">
+              <option value="24">24 Hour</option>
+              <option value="12">12 Hour</option>
+            </select>
+          </div>
+        </li>
+        <li>
+          <div class="align-center-y opt-holder">
+            <label for="clockStyle">Clock precision</label>
+            <select name="clockStyle" id="clockPrecision">
+              <option value="HH:MM:SS">HH:MM:SS</option>
+              <option value="HH:MM">HH:MM</option>
+              <option value="HH">HH</option>
+            </select>
+          </div>
+        </li>
+        <li>
+          <div class="align-center-y opt-holder">
+            <label>Clock flickering</label>
+            <label class="switch align-right">
+              <input type="checkbox" id="clockFlicker">
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </li>
+      </ul>
+      <h2>Appearance</h2>
+      <ul>
+        <li>
+          <div class="align-center-y opt-holder">
+            <label for="backgroundColor">Background color</label>
+            <button id="backgroundColorReset">Reset</button>
+            <input type="color" name="backgroundColor" id="backgroundColor" style="margin-left: .5rem;">
+          </div>
+        </li>
+      </ul>
+    </div>
+    <h2>Made by <a href="https://www.codefoxdev.com" class="link" target="_blank">Codefoxdev</a></h2>
+  </div>
+
+  <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" display="none">
+    <symbol id="search" viewBox="0 0 512 512">
+      <path
+        d="M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7C401.8 87.79 326.8 13.32 235.2 1.723C99.01-15.51-15.51 99.01 1.724 235.2c11.6 91.64 86.08 166.7 177.6 178.9c53.8 7.189 104.3-6.236 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 0C515.9 484.7 515.9 459.3 500.3 443.7zM79.1 208c0-70.58 57.42-128 128-128s128 57.42 128 128c0 70.58-57.42 128-128 128S79.1 278.6 79.1 208z" />
+    </symbol>
+    <symbol id="user" viewBox="0 0 32 32">
+      <path
+        d="M 16 4 C 12.145852 4 9 7.1458513 9 11 C 9 13.393064 10.220383 15.517805 12.0625 16.78125 C 8.485554 18.302923 6 21.859881 6 26 L 8 26 C 8 21.533333 11.533333 18 16 18 C 20.466667 18 24 21.533333 24 26 L 26 26 C 26 21.859881 23.514446 18.302923 19.9375 16.78125 C 21.779617 15.517805 23 13.393064 23 11 C 23 7.1458513 19.854148 4 16 4 z M 16 6 C 18.773268 6 21 8.2267317 21 11 C 21 13.773268 18.773268 16 16 16 C 13.226732 16 11 13.773268 11 11 C 11 8.2267317 13.226732 6 16 6 z" />
+    </symbol>
+    <symbol id="images" viewbox="0 0 512 512">
+      <path
+        d="M447.1 32h-384C28.64 32-.0091 60.65-.0091 96v320c0 35.35 28.65 64 63.1 64h384c35.35 0 64-28.65 64-64V96C511.1 60.65 483.3 32 447.1 32zM111.1 96c26.51 0 48 21.49 48 48S138.5 192 111.1 192s-48-21.49-48-48S85.48 96 111.1 96zM446.1 407.6C443.3 412.8 437.9 416 432 416H82.01c-6.021 0-11.53-3.379-14.26-8.75c-2.73-5.367-2.215-11.81 1.334-16.68l70-96C142.1 290.4 146.9 288 152 288s9.916 2.441 12.93 6.574l32.46 44.51l93.3-139.1C293.7 194.7 298.7 192 304 192s10.35 2.672 13.31 7.125l128 192C448.6 396 448.9 402.3 446.1 407.6z" />
+    </symbol>
+    <symbol id="post" viewbox="0 0 512 512">
+      <path
+        d="M480 32H128C110.3 32 96 46.33 96 64v336C96 408.8 88.84 416 80 416S64 408.8 64 400V96H32C14.33 96 0 110.3 0 128v288c0 35.35 28.65 64 64 64h384c35.35 0 64-28.65 64-64V64C512 46.33 497.7 32 480 32zM272 416h-96C167.2 416 160 408.8 160 400C160 391.2 167.2 384 176 384h96c8.836 0 16 7.162 16 16C288 408.8 280.8 416 272 416zM272 320h-96C167.2 320 160 312.8 160 304C160 295.2 167.2 288 176 288h96C280.8 288 288 295.2 288 304C288 312.8 280.8 320 272 320zM432 416h-96c-8.836 0-16-7.164-16-16c0-8.838 7.164-16 16-16h96c8.836 0 16 7.162 16 16C448 408.8 440.8 416 432 416zM432 320h-96C327.2 320 320 312.8 320 304C320 295.2 327.2 288 336 288h96C440.8 288 448 295.2 448 304C448 312.8 440.8 320 432 320zM448 208C448 216.8 440.8 224 432 224h-256C167.2 224 160 216.8 160 208v-96C160 103.2 167.2 96 176 96h256C440.8 96 448 103.2 448 112V208z" />
+    </symbol>
+    <symbol id="maps" viewbox="0 0 384 512">
+      <path
+        d="M168.3 499.2C116.1 435 0 279.4 0 192C0 85.96 85.96 0 192 0C298 0 384 85.96 384 192C384 279.4 267 435 215.7 499.2C203.4 514.5 180.6 514.5 168.3 499.2H168.3zM192 256C227.3 256 256 227.3 256 192C256 156.7 227.3 128 192 128C156.7 128 128 156.7 128 192C128 227.3 156.7 256 192 256z" />
+    </symbol>
+  </svg>
+</body>
+
+</html>
